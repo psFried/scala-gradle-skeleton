@@ -1,11 +1,11 @@
-import org.scalatest._
+import org.scalatest.path
 
-class FooTest extends FunSpec {
+class FooTest extends path.FunSpec {
 
   describe("A Foo") {
 
     it("does something awesome") {
-      assert("Bar" == Foo.doSomethingAwesome())
+      assert("Bar" === Foo.doSomethingAwesome())
     }
   }
 }

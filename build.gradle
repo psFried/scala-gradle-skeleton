@@ -11,6 +11,7 @@ dependencies {
 
 task test(overwrite: true, dependsOn: ['testClasses'], type: JavaExec) {
   main = 'org.scalatest.tools.Runner'
+  jvmArgs << '-ea'
   args = ['-R', 'build/classes/test', '-o']
   classpath = sourceSets.test.runtimeClasspath
 }
